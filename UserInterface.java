@@ -7,11 +7,14 @@ public class UserInterface {
             public static void main(String[] args){
     AtmInterface ap =new AtmOpea();
     Scanner sc = new Scanner(System.in);
-    int atmnumber=79892;
-    int atmpin=123;
-    System.out.println("Enter ATM number");
+    System.out.println("set the Atm number");
+    int atmnumber=sc.nextInt();
+    System.out.println("set Atm pin");
+    int atmpin=sc.nextInt();
+
+    System.out.println("Reenter ATM number");
     int atmnum2=sc.nextInt();
-    System.out.println("Enter ATM Pin");
+    System.out.println("Reenter ATM Pin");
     int atmpin2=sc.nextInt();
     if(atmnumber==atmnum2 && atmpin==atmpin2){
         while(true) {
